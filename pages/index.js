@@ -22,10 +22,11 @@ export default function Home() {
     return (
         <div className="relative bg-navy h-full subpixel-antialiased">
             <div
-                className="z-0 absolute pointer-events-none bg-no-repeat bg-cover top-0 right-0 hidden lg:block"
+                className="z-10 absolute pointer-events-none bg-no-repeat bg-cover top-0 right-0 hidden lg:block"
                 style={{ width: "40vw", height: "40vw", backgroundImage: "url(/radial.png)" }}
             ></div>
-            <div className="z-10 relative">
+            <div className="">
+				
                 <header
                     id="header"
                     className={`${scrolling ? "scrolling" : ""} sticky top-0 z-20 bg-no-repeat bg-contain`}
@@ -97,7 +98,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="bg-no-repeat bg-left-top bg-cover xl:bg-top" style={{ backgroundImage: "url(/gradient-2.png)" }}>
+                <div className="bg-no-repeat bg-left-top bg-cover lg:bg-top" style={{ backgroundImage: "url(/gradient-2-wide.png)" }}>
                     <div className="container mx-auto px-8 pb-16 lg:pb-24">
                         <div className="lg:grid lg:grid-cols-12">
                             <div className="lg:col-span-6 xl:col-span-5">
