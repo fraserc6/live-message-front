@@ -34,7 +34,7 @@ export default function Home() {
                 >
                     <div className="container mx-auto px-8 py-6">
                         <div className="flex items-center justify-between gap-4">
-                            <div>
+                            <div className="pr-4">
                                 <a href="#" title="Live Message">
                                     <img src="/logo-light.png" alt="Live Message" className="w-48" />
                                 </a>
@@ -57,10 +57,10 @@ export default function Home() {
                             <div>
                                 <a
                                     href="#"
-                                    className="flex items-center gap-2 px-3 py-2 text-sm rounded-md duration-100 transition-colors bg-gray-800 text-white hover:bg-gray-700"
+                                    className="flex items-center flex-shrink-0 px-3 py-2 text-sm rounded-md duration-100 transition-colors bg-gray-800 text-white hover:bg-gray-700"
                                 >
                                     Create Account
-                                    <svg viewBox="0 0 20 20" fill="currentColor" className="arrow-right w-4 h-4">
+                                    <svg viewBox="0 0 20 20 ml-2" fill="currentColor" className="arrow-right w-4 h-4">
                                         <path
                                             fillRule="evenodd"
                                             d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -80,8 +80,8 @@ export default function Home() {
                             <p className="text-blue-200 text-lg mb-10 lg:pr-56">
                                 Are you looking to increase sales by up to 60%, generate more leads by 300% or do you simply want to improve customer service?
                             </p>
-                            <div className="flex flex-col lg:flex-row gap-4 lg:gap-2 lg:pr-56">
-                                <div className="flex-1">
+                            <div className="flex flex-col lg:flex-row lg:pr-56">
+                                <div className="flex-1 mb-2 lg:mb-0 lg:pr-4">
                                     <input
                                         className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-2 px-4 block w-full appearance-none leading-normal"
                                         type="email"
@@ -114,8 +114,8 @@ export default function Home() {
                     <div className="container mx-auto px-8 ">
                         <div className="lg:grid lg:grid-cols-12">
                             <div className="lg:col-span-5 xl:col-span-4">
-                                <div className="group flex gap-6 pb-12 lg:border-b border-white border-opacity-30 lg:pr-16 lg:mb-12 cursor-pointer">
-                                    <div className="text-white">
+                                <div className="group flex pb-12 lg:border-b border-white border-opacity-30 lg:pr-16 lg:mb-12 cursor-pointer">
+                                    <div className="text-white mr-6">
                                         <svg className="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                             <path
                                                 fillRule="evenodd"
@@ -132,8 +132,8 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className="group flex gap-6 pb-12 lg:border-b border-white border-opacity-30 lg:pr-16 lg:mb-12 cursor-pointer">
-                                    <div className="text-blue-300 group-hover:text-white">
+                                <div className="group flex pb-12 lg:border-b border-white border-opacity-30 lg:pr-16 lg:mb-12 cursor-pointer">
+                                    <div className="text-blue-300 mr-6 group-hover:text-white">
                                         <svg className="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                             <path d="M17.924 2.617a.997.997 0 00-.215-.322l-.004-.004A.997.997 0 0017 2h-4a1 1 0 100 2h1.586l-3.293 3.293a1 1 0 001.414 1.414L16 5.414V7a1 1 0 102 0V3a.997.997 0 00-.076-.383z" />
                                             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
@@ -147,8 +147,8 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className="group flex gap-6 pb-12 lg:border-b border-white border-opacity-30 lg:pr-16 lg:mb-12 cursor-pointer">
-                                    <div className="text-blue-300 group-hover:text-white">
+                                <div className="group flex pb-12 lg:border-b border-white border-opacity-30 lg:pr-16 lg:mb-12 cursor-pointer">
+                                    <div className="text-blue-300 mr-6 group-hover:text-white">
                                         <svg className="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                             <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" />
                                             <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" />
@@ -193,8 +193,8 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="grid lg:grid-cols-3 pt-12">
-                            <div className="group flex gap-6 pb-12 lg:border-b border-white border-opacity-30 lg:pr-16 lg:mb-12 cursor-pointer">
-                                <div className="text-gray-800">
+                            <div className="group flex pb-12 lg:border-b border-white border-opacity-30 lg:pr-16 lg:mb-12 cursor-pointer">
+                                <div className="text-gray-800 mr-6">
                                     <svg className="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                         <path
                                             fillRule="evenodd"
@@ -210,8 +210,8 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="group flex gap-6 pb-12 lg:border-b border-white border-opacity-30 lg:pr-16 lg:mb-12 cursor-pointer">
-                                <div className="text-gray-300 group-hover:text-gray-800">
+                            <div className="group flex pb-12 lg:border-b border-white border-opacity-30 lg:pr-16 lg:mb-12 cursor-pointer">
+                                <div className="text-gray-300 mr-6 group-hover:text-gray-800">
                                     <svg className="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                         <path d="M17.924 2.617a.997.997 0 00-.215-.322l-.004-.004A.997.997 0 0017 2h-4a1 1 0 100 2h1.586l-3.293 3.293a1 1 0 001.414 1.414L16 5.414V7a1 1 0 102 0V3a.997.997 0 00-.076-.383z" />
                                         <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
@@ -224,8 +224,8 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="group flex gap-6 pb-12 lg:border-b border-white border-opacity-30 lg:pr-16 lg:mb-12 cursor-pointer">
-                                <div className="text-gray-300 group-hover:text-gray-800">
+                            <div className="group flex pb-12 lg:border-b border-white border-opacity-30 lg:pr-16 lg:mb-12 cursor-pointer">
+                                <div className="text-gray-300 mr-6 group-hover:text-gray-800">
                                     <svg className="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                         <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" />
                                         <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" />
@@ -253,14 +253,14 @@ export default function Home() {
                             <div className="col-span-12 md:col-span-6 lg:col-span-3 pt-12 lg:pt-0">
                                 <h3 className="text-gray-800 font-bold mb-6">Products</h3>
                                 <nav>
-                                    <div className="flex flex-col gap-4 text-gray-600 text-white">
-                                        <a href="#" className="duration-100 transition-colors hover:text-gray-500">
+                                    <div className="flex flex-col text-gray-600 text-white">
+                                        <a href="#" className="duration-100 py-2 transition-colors hover:text-gray-500">
                                             Features
                                         </a>
-                                        <a href="#" className="duration-100 transition-colors hover:text-gray-500">
+                                        <a href="#" className="duration-100 py-2 transition-colors hover:text-gray-500">
                                             Pricing
                                         </a>
-                                        <a href="#" className="duration-100 transition-colors hover:text-gray-500">
+                                        <a href="#" className="duration-100 py-2 transition-colors hover:text-gray-500">
                                             Partner with us
                                         </a>
                                     </div>
@@ -269,14 +269,14 @@ export default function Home() {
                             <div className="col-span-12 md:col-span-6 lg:col-span-3 pt-12 lg:pt-0">
                                 <h3 className="text-gray-800 font-bold mb-6">Developers</h3>
                                 <nav>
-                                    <div className="flex flex-col gap-4 text-gray-600">
-                                        <a href="#" className="duration-100 transition-colors hover:text-gray-500">
+                                    <div className="flex flex-col text-gray-600">
+                                        <a href="#" className="duration-100 py-2 transition-colors hover:text-gray-500">
                                             Documentation
                                         </a>
-                                        <a href="#" className="duration-100 transition-colors hover:text-gray-500">
+                                        <a href="#" className="duration-100 py-2 transition-colors hover:text-gray-500">
                                             Releases
                                         </a>
-                                        <a href="#" className="duration-100 transition-colors hover:text-gray-500">
+                                        <a href="#" className="duration-100 py-2 transition-colors hover:text-gray-500">
                                             Status
                                         </a>
                                     </div>
